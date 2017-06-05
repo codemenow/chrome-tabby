@@ -1,0 +1,12 @@
+html {
+    background-image: url('images/2.jpg');
+    background-size: cover;
+}
+#time {
+    font-size: 64px;
+    color: #FFF;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
