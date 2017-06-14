@@ -2,11 +2,28 @@ html {
     background-image: url('images/2.jpg');
     background-size: cover;
 }
-#time {
-    font-size: 90px;
+.watch {
     color: #FFF;
+    position: absolute;
+}
+#time {
+    font-size: 120px;
+}
+#date {
+    font-size: 48px;
+}
+
+.watch-center {
     text-align: center;
-    position: relative;
     top: 50%;
     transform: translateY(-50%);
+    position: relative;
+}
+.watch-bottom-left {
+    left: 15px;
+    bottom: 15px;
+}
+.watch-bottom-right {
+    right: 15px;
+    bottom: 15px;
 }
