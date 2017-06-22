@@ -1,6 +1,7 @@
-html {
-    background-image: url('images/2.jpg');
+body {
+    background-image: url('images/1.jpg');
     background-size: cover;
+    -webkit-user-select: none;
 }
 .watch {
     color: #FFF;
