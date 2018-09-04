@@ -1,6 +1,6 @@
 function showTime() {
-  document.getElementById('time').innerHTML = moment().format('HH:mm');;
-  document.getElementById('date').innerHTML = moment().format('MMMM Do YYYY');;
+  document.getElementById('time').innerHTML = moment().format('HH:mm');
+  document.getElementById('date').innerHTML = moment().format('MMMM Do YYYY');
 }
 function getRandomImageURL() {
   var imageNameList = ['1.jpg', '2.jpg', '3.jpg'];
@@ -18,7 +18,7 @@ function changeBackground(){
 document.addEventListener("DOMContentLoaded", function(event) {
   changeBackground();
   showTime();
-  //setInterval(showTime, 1000);
+  setInterval(showTime, 1000);
 });
 document.addEventListener('dblclick', function() {
   changeBackground();
