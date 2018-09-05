@@ -1,7 +1,18 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
 body {
-    background-image: url('images/1.jpg');
+    background-image: url('images/2.jpg');
     background-size: cover;
     -webkit-user-select: none;
+}
+#tabby-app {
+    height: 100%;
+}
+.tabby-container {
+    height: 100%;
 }
 .tabby-clock {
     color: #FFFFFF;
@@ -15,4 +26,7 @@ body {
 }
 .tabby-clock-date {
     font-size: 48px;
+}
+.tabby-todo {
+    display: none;
 }

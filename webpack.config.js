@@ -7,7 +7,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
     template: './tabby.html',
     filename: 'tabby.html',
     inject: 'body'
-})
+});
 
 module.exports = {
     entry: './app.js',
@@ -35,4 +35,4 @@ module.exports = {
         ]
     },
     plugins: [HtmlWebpackPluginConfig]
-}
+};
