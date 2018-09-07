@@ -1,0 +1,35 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  body {
+    //background-image: url('../assets/2.jpg');
+    background-size: cover;
+    -webkit-user-select: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    #tabby-app {
+      height: 100%;
+      .tabby-container {
+        height: 100%;
+        .tabby-clock {
+          //color: #FFFFFF;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          text-align: center;
+          .tabby-clock-time {
+            font-size: 120px;
+          }
+          .tabby-clock-date {
+            font-size: 48px;
+          }
+        }
+        .tabby-todo {
+          display: none;
+        }
+      }
+    }
+  }
+}

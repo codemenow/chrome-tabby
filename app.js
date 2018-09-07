@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Moment from 'moment';
-
+require('./src/styles/tabby.less');
 class TabbyApp extends React.Component {
     constructor(props) {
         super(props);
