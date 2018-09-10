@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Moment from 'moment';
+import {TabbyClock} from '../src/components/clock';
+import {TabbyTodoList} from '../src/components/todo'
+
 require('./styles/tabby.less');
+
 class TabbyApp extends React.Component {
     constructor(props) {
         super(props);
@@ -16,7 +20,7 @@ class TabbyApp extends React.Component {
                 <TabbyClock clock={this.state.clock} />
                 <div className="tabby-todo">
                     <h3>TODO</h3>
-                    <TodoList items={this.state.items} />
+                    <TabbyTodoList items={this.state.items} />
                     <form onSubmit={this.handleSubmit}>
                         <input id="new-todo" onChange={this.handleChange} value={this.state.text}/>
                         <button>Add #{this.state.items.length + 1}</button>
@@ -59,32 +63,6 @@ class TabbyApp extends React.Component {
             items: prevState.items.concat(newItem),
             text: ''
         }));
-    }
-}
-
-class TabbyClock extends React.Component {
-    render(){
-        return (
-            <div className="tabby-clock">
-                <div className="tabby-clock-time">
-                    {this.props.clock.time}
-                </div>
-                <div className="tabby-clock-date">
-                    {this.props.clock.date}
-                </div>
-            </div>
-        )
-    }
-}
-class TodoList extends React.Component {
-    render() {
-        return (
-            <ul>
-                {this.props.items.map(item => (
-                    <li key={item.id}>{item.text}</li>
-                ))}
-            </ul>
-        );
     }
 }
 
