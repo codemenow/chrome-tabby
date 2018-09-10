@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Moment from 'moment';
-require('./src/styles/tabby.less');
+require('./styles/tabby.less');
 class TabbyApp extends React.Component {
     constructor(props) {
         super(props);
@@ -12,7 +12,7 @@ class TabbyApp extends React.Component {
 
     render() {
         return (
-            <div class="tabby-container">
+            <div className="tabby-container">
                 <TabbyClock clock={this.state.clock} />
                 <div className="tabby-todo">
                     <h3>TODO</h3>
