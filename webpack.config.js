@@ -13,7 +13,7 @@ module.exports = {
     devtool: 'inline-source-map',
     output: {
         path: path.resolve('dist'),
-        publicPath: '/dist/',
+        publicPath: '/',
         filename: 'app_bundle.js'
     },
     module: {
