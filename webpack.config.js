@@ -10,6 +10,7 @@ const extractTextPlugin = new ExtractTextPlugin('src/styles/tabby.less');
 
 module.exports = {
     entry: './src/app.js',
+    devtool: 'inline-source-map',
     output: {
         path: path.resolve('dist'),
         publicPath: '/dist/',

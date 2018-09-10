@@ -8,7 +8,8 @@ export class TabbyClock extends React.Component {
             clock: {
                 time: Moment().format('HH:mm:ss'),
                 date: Moment().format('MMMM Do YYYY')
-            }};
+            }
+        };
     }
 
     tick() {
