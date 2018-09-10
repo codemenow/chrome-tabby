@@ -14,7 +14,28 @@ html {
       height: 100%;
       .tabby-container {
         height: 100%;
+        &.home {
+          .tabby-clock {
+            display: block;
+          }
+        }
+        &.saved {
+          .tabby-saved {
+            display: block;
+          }
+        }
+        &.notes {
+          .tabby-notes {
+            display: block;
+          }
+        }
+        &.settings {
+          .tabby-settings {
+            display: block;
+          }
+        }
         .tabby-clock {
+          display: none;
           position: relative;
           top: 50%;
           transform: translateY(-50%);
@@ -25,6 +46,15 @@ html {
           .tabby-clock-date {
             font-size: 48px;
           }
+        }
+        .tabby-saved {
+          display: none;
+        }
+        .tabby-notes {
+          display: none;
+        }
+        .tabby-settings {
+          display: none;
         }
         .tabby-sidebar {
           position: absolute;
